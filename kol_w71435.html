@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolokwium</title>
+    <script defer src="skrypt.js"></script>
+    <script defer src="walidacja.js"></script>   
+    <style>
+        .error {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="name">Imie</label>
+        <input type="text" id="name" name="name" required>
+        <br/>
+        <label for="surname">Nazwisko</label>
+        <input type="text" id="surname" name="surname" required>
+        <br/>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <br/>
+        <label for="sport">Dyscyplina sportowa</label>
+        <select id="sport" name="sport" required>
+            <option value="pilka">Piłka nożna</option>
+            <option value="siatka">Siatkówka</option>
+            <option value="tenis">Tenis</option>
+        </select>
+       
+        <input type="submit" value="Wyślij"/>
+        <button type="submit">Wyślij <b>Test</b></button>
+    </form>
+</body>
+</html>
